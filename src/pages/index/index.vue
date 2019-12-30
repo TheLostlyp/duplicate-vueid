@@ -1,21 +1,36 @@
 <template>
+<h-page>
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
 		<view>
 			<text class="title">{{title}}</text>
 		</view>
+    <h-form>
+      <h-form-item>
+        
+      </h-form-item>
+    </h-form>
 	</view>
+</h-page>
 </template>
 
 <script>
+import hPage from '../../components/h-page/h-page'
+import hForm from '../../components/h-form/h-form'
+import hFormItem from '../../components/h-form/h-form-item'
 	export default {
+    components: {
+      hPage,
+      hForm,
+      hFormItem,
+    },
 		data() {
 			return {
 				title: 'Hello'
 			}
 		},
 		onLoad() {
-
+      console.log(this)
 		},
 		methods: {
 
