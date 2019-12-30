@@ -5,6 +5,7 @@
 <script>
 export default {
   name: 'h-form-item',
+  inject: ['form'],
   mounted () {
     console.log(this)
   },

@@ -7,7 +7,12 @@
 
 <script>
 export default {
-  name: 'h-form'
+  name: 'h-form',
+  provide() {
+    return {
+      form: this
+    }
+  },
 }
 </script>
 
