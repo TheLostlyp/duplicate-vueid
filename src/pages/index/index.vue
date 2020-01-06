@@ -6,7 +6,9 @@
       <text class="title">{{title}}</text>
     </view>
     <h-form>
-      <h-form-item></h-form-item>
+      <h-test>
+        <h-form-item></h-form-item>
+      </h-test>
     </h-form>
   </view>
 </h-page>
@@ -14,6 +16,7 @@
 
 <script>
 import hPage from '../../components/h-page/h-page'
+import hTest from '../../components/h-form/h-test'
 import hForm from '../../components/h-form/h-form'
 import hFormItem from '../../components/h-form/h-form-item'
 	export default {
@@ -21,6 +24,7 @@ import hFormItem from '../../components/h-form/h-form-item'
       hPage,
       hForm,
       hFormItem,
+      hTest,
     },
 		data() {
 			return {
